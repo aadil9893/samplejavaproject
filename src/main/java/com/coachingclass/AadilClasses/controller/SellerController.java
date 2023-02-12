@@ -38,6 +38,7 @@ public class SellerController {
 	public List<Seller>getSellerr(){
 		List<Seller> sellerList = new ArrayList<>();
 		sellerList=	sellerService.getSeller();
+		System.out.println("testing git");
 		return sellerList;
 				 
 	}
