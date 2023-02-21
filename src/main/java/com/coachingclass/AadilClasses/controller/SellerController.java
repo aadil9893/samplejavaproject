@@ -44,6 +44,7 @@ public class SellerController {
 	}
 	@GetMapping("/PullSellerdata/{email}/{password}")
 	public ResponseEntity<Seller> getByEmailAndPassword(@PathVariable String email, @PathVariable String password){
+		System.out.println("changes for commit");
 		Seller seller = sellerRepo.findByEmailAndPassword(email, password);
 		return ResponseEntity.ok().body(seller);
 	}
